@@ -1,0 +1,100 @@
+
+
+#social-test {
+
+  vertical-align: middle; /* Aligns the social media icons vertically */
+  text-align: center;   /* Aligns the social media icons horizontally */
+  align-items: center; /* Centers the items vertically */
+  font-size: 30px;  
+  
+
+  .social {
+    padding-left: 0px;
+  }
+  li {
+    display: inline-block;
+  }
+  li a {
+    color:  white;  
+    border-radius: 6px;
+    list-style-type: none;
+    display: inline-block;
+
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+
+    padding: 1%;
+    border: 2px solid rgba(256, 256, 256, 0.6);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    transition: ease 0.3s;
+    
+    &:hover {
+      color: rgb(255, 235, 235, 1);  ;
+      border: 3px solid rgb(255, 235, 235, 1);  
+    }
+  }
+}
+
+.social:hover > li {
+  opacity: 0.3;
+}
+
+.social:hover > li:hover {
+  opacity: 0.9;
+}
+
+.social a:hover i {
+    color: #a2c7ff; /* Change this to your desired hover color */
+  }
+
+.social a i {
+    color: white; /* Set the icon color to white */
+  }
+
+
+
+  #social-test2 {
+
+    vertical-align: middle; /* Aligns the social media icons vertically */
+    text-align: center;   /* Aligns the social media icons horizontally */
+    align-items: center; /* Centers the items vertically */
+    font-size: 30px;  
+    
+  
+    .social2 {
+      padding-left: 0px;
+    }
+    li2 {
+      display: inline-block;
+    }
+    li a {
+      color:  white;  
+      border-radius: 6px;
+      list-style-type: none;
+      display: inline-block;
+  
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+  
+      padding: 1%;
+      border: 2px solid rgba(256, 256, 256, 0.6);
+      cursor: pointer;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      transition: ease 0.3s;
+      
+      &:hover {
+        color: rgb(255, 235, 235, 1);  ;
+        border: 3px solid rgb(255, 235, 235, 1);  
+      }
+    }
+  }
+
+
+

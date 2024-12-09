@@ -1,0 +1,210 @@
+
+/* Sunset CSS Linear Gradient Background */
+body {
+  font-family: Inter, sans-serif;
+  color: rgb(255, 235, 235);
+  background: linear-gradient(to top,#030910,#0d1b2c, #123054, #884229 ,#ffb699,  #a2c7ff);
+  
+  margin: fit-content;
+  display: grid;
+  background-repeat: no-repeat;
+
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  overflow:scroll;
+}
+
+
+
+
+/* Highlighted text styles */
+.highlighted-text {
+  padding-top: 60px; 
+  padding-bottom: 0px; 
+  text-shadow: 0px 3px 4px rgba(66, 15, 15, 0.9); /* Add a shadow effect */
+
+}
+  
+/* Menu bar style */
+
+.menu-bar {
+  position: fixed; /* Fixes the menu bar in place */
+  top: 0; /* Positions the menu bar at the top of the viewport */
+  left: 0; /* Aligns the menu bar to the right */
+  right: 0; /* Aligns the menu bar to the right */
+  right: auto;
+
+  width: 100%; /* Sets the width to 100% of the parent element */
+  height: fit-content;
+
+  align-items: center; /* Centers the menu bar vertically */
+  justify-content: center; /* Centers the items horizontally within the flex container */ 
+
+  font-size: 1.0rem; /* Sets the font size to 1.0rem (16px) */
+  display: inline-flex; /* Uses Flexbox layout */
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+  background-color: rgba(18, 30, 47, 0.9) ; /* Sets the background color of the menu bar */
+  backdrop-filter: blur(0px); /* Applies a blur effect to the background */
+  z-index: 1000; /* Ensure the menu bar is above other content */
+
+  padding: 0px; /* Removes the default padding */
+  padding-left: 0px; padding-right: 0px; /* Adds padding to the left and right of the menu bar */
+  padding-top: 8px; padding-bottom: 10px; /* Adds padding to the top and bottom of the menu bar */
+  margin-top: 0px; /* Adds a margin around the menu bar */
+
+  box-shadow: 0px 0px 25px rgb(58, 41, 17); /* Subtle shadow for better visibility */
+}
+
+
+/* Menu bar list item style */
+.menu-bar li {
+  list-style: none; /* Removes the default list styling (bullets or numbers) */
+  color: rgb(224, 227, 249); /* Sets the text color to white */
+  font-family: sans-serif; /* Sets the font family to sans-serif */
+  font-weight: bold; /* Makes the text bold */
+  padding: 14px 20px; /* Adds padding inside each list item */
+  margin-left: 6px; margin-right: 6px; /* Adds horizontal margin between list items */
+  position: relative; /* Sets the position to relative for positioning pseudo-elements */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the list item */
+  white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+.menu-bar li::before {
+  content: " "; /* Inserts an empty content before the list item */
+  position: absolute; /* Positions the pseudo-element absolutely */
+  top: 0; /* Positions the top edge at the top of the parent element */
+  left: 0; /* Positions the left edge at the left of the parent element */
+  height: 100%; /* Sets the height to 100% of the parent element */
+  width: 100%; /* Sets the width to 100% of the parent element */
+  z-index: -1; /* Places the pseudo-element behind the parent element */
+  transition: 0.4s; /* Adds a transition effect with a duration of 0.2 seconds */
+  border-radius: 40px; /* Rounds the corners of the pseudo-element */
+}
+
+.menu-bar li:hover::before {
+  background: linear-gradient(to top, #f3ddd3, #cfdff7); /* Sets a gradient background on hover */
+  box-shadow: 0px 0px 10px #b9b9ff98; /* Adds a shadow effect on hover */
+  transform: scale(1.0); /* Scales the pseudo-element by 1.2 times on hover */
+} 
+
+.menu-bar li:hover {
+  color: rgb(35, 49, 93); /* Changes the text color to black on hover */
+}
+
+/* to remove underline from navigation items */
+.menu-bar li a {
+  text-decoration: none; /* Removes the underline from the anchor elements */
+  color: inherit; /* Ensures the link inherits the color from the parent li */
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Header and main content styles */
+
+header {
+  font-family: Inter, Sans-serif;
+  color: white;
+  text-align: center;
+  
+}
+
+main {
+  font-family: 'Aptos', sans-serif; 
+  color: rgb(14, 31, 77);  
+}
+
+/*text block for the main content*/
+.text-block {
+  background-color: rgba(198, 198, 247, 0.960); /* Semi-transparent lilac background */
+  color: rgb(11, 21, 51);
+
+  justify-content: center; /* Center the text */
+  padding-top: 12px; padding-bottom: 12px;
+  padding-left: 18px; padding-right: 18px; /* Padding inside the box */
+  margin: 20px auto; /* Center the box and add margin */
+  
+  border-radius: 10px;
+
+  max-width: 900px; /* Maximum width of the box */
+  height: auto;
+  box-shadow: 0 0px 20px rgba(89, 89, 202, 1); /* Subtle shadow for better visibility */
+}
+
+/*text block for the main content*/
+.text-block1 {
+  font-size: 1.0 em; /* Sets the font size to 1.0rem (16px) */
+  text-align: center; 
+  margin-left: 10px ; /* Space around the text */
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color:#ece9ff; 
+  padding-top: 0px; padding-bottom: 1px; padding-left: 12px; padding-right: 12px; /* Padding inside the box */
+  box-shadow: 0 0px 20px rgb(43, 13, 13);/* Subtle shadow for better visibility */
+  
+  border-radius: 20px;
+  color: rgb(14, 31, 77);
+  width: 800px;
+  height: auto; 
+}
+
+/*translucent text block for the main content*/
+
+.text-block2 {
+  background-color: rgba(138, 138, 138, 0.25); 
+  font-size: var(24px);
+  color: rgb(241, 225, 225);
+
+  justify-content: center; /* Center the text */
+  padding-top: 20px; padding-bottom: 20px;
+  padding-left: 35px; padding-right: 35px; /* Padding inside the box */
+  margin: 20px auto; /* Center the box and add margin */
+  margin-bottom: 30px;
+  
+  border: 2px solid rgba(172, 180, 255, 0.1); /* Border thickness */
+  border-radius: 20px;
+  max-width: 600px; /* Maximum width of the box */
+
+  box-shadow: 0 0px 20px rgba(60, 60, 156, 0); /* Subtle shadow for better visibility */
+}
+
+.text-block3 {
+  background-color: rgba(138, 138, 138, 0.25); 
+  font-size: var(24px);
+  color: rgb(241, 225, 225);
+
+  align-items: center;
+  justify-items: center;
+  justify-content: center; /* Center the text */
+  padding-top: 20px; padding-bottom: 20px;
+  padding-left: 35px; padding-right: 35px; /* Padding inside the box */
+  margin: 20px auto; /* Center the box and add margin */
+  margin-bottom: 30px;
+  
+  border: 2px solid rgba(172, 180, 255, 0.1); /* Border thickness */
+  border-radius: 20px;
+  max-width: 900px; /* Maximum width of the box */
+
+  box-shadow: 0 0px 20px rgba(60, 60, 156, 0); /* Subtle shadow for better visibility */
+}
+
+footer {
+  display: flex;
+  align-items: center; /* Centers the menu bar vertically */
+  justify-content: center; /* Centers the items horizontally within the flex container */
+  width: 900px;
+  text-align: center;
+  padding: 10px;
+  background: rgba(46, 61, 146, 0.671);
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
