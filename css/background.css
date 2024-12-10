@@ -133,7 +133,7 @@ main {
 
   max-width: 900px; /* Maximum width of the box */
   height: auto;
-  box-shadow: 0 0px 20px rgba(89, 89, 202, 1); /* Subtle shadow for better visibility */
+  box-shadow: 0 0px 10px rgb(188, 188, 237); /* Subtle shadow for better visibility */
 }
 
 /*text block for the main content*/
@@ -195,11 +195,13 @@ main {
 }
 
 footer {
-  display: flex;
-  align-items: center; /* Centers the menu bar vertically */
+
+  bottom: 0;
   justify-content: center; /* Centers the items horizontally within the flex container */
-  width: 900px;
+  align-items: center; 
   text-align: center;
+  width: 900px;
+
   padding: 10px;
   background: rgba(46, 61, 146, 0.671);
   color: white;
@@ -207,4 +209,6 @@ footer {
   margin-bottom: 0px;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+
+
 }

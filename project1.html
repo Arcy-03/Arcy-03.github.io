@@ -41,15 +41,33 @@
     <script src="js/trial.js"></script>
   </header>
 
-  
-  <main class="text-block2" style="background-color: rgba(204, 204, 255, 0.15);"> 
-    <section id="project-1">
-        <div  style="padding-left: 50px; padding-right: 50px">
 
-        </div>
-    </section>      
-  
 
+          
+  <main class="text-block2" style="background-color: rgba(204, 204, 255, 0); box-shadow: 0 0px 10px rgb(188, 188, 237);"> 
+
+
+        <section id="portfolio" class="section-portfolio1">
+          <div class="container">
+
+            <section id="project-1">
+              <div style="padding-left: 20px; padding-right: 20px">
+                  <h2 style=" font-size: 1.8em; color: rgb(255, 241, 241); text-align: center; margin-bottom: 20px; padding-bottom: 10px;"><b>UniMarketplace</b></h2>
+                  <p style=" color:rgb(212, 229, 255); font-size: 17px; text-align: justify; justify-items: center; ">
+                  During the 1st year of my undergraduate degree, in second semester, we were asked to create a Software project as part of our module - Team Software Project.
+                  </p>
+              </div>
+            </section>
+            
+            <div class="project-card">
+              <img src="project1.jpg" alt="Project 1" style="margin: auto">
+              <h3 class="project-title">UniMarketplace</h3>
+              <p class="project-details" style="text-align: center;">A Responsive E-Commerce web app created as part of the Team software module</p>
+              <button onclick="window.open('https://github.com/Arcy-03/Team-Software-Project-L4', '_blank')" style="margin-bottom: 10px;">View GitHub</button>
+            </div>
+            
+          </div>
+        </section>
 
   </main>
 
@@ -61,13 +79,18 @@
       <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></a></i>
       <a href="https://www.linkedin.com/in/hrithikchandra03/"><i class="fa fa-linkedin" aria-hidden="true"></a></i>
     </ul>
-  </div>
-  
-    <footer>
-      <p>&copy; Copyright Hrithik Chandra <span id="copyrightYear">2024</span></p>
-    </footer>
+  </div>    
+
+  <script>
+    function openDetails(link) {
+    window.open(link, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes');
+    }
+  </script>
 
 
+<footer>
+    <p>&copy; Copyright Hrithik Chandra <span id="copyrightYear">2024</span></p>
+</footer>
 
 </body>
 </html>
