@@ -1,0 +1,13 @@
+.about1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+
+.text-blk2 {
+  background-color: rgba(138, 138, 138, 0.15);
+  flex: 1;
+  padding: 20px;
+}
