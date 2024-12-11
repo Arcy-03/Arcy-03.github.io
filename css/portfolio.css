@@ -49,6 +49,7 @@
 
 .container {
       display:flex;
+      max-width: 800px;
       flex-wrap: wrap;
       justify-content: center;
       gap: 25px; /* Adds space between the project cards */
@@ -65,9 +66,9 @@
       background: rgba(196, 213, 255, 0.719);    
       border-radius: 20px;
       box-shadow: 0 0px 5px rgb(46, 56, 99); 
-      width: 300px;
+      width: 500px;
       margin: 0px;
-      padding: 10px;
+      padding: 0px;
       text-align: center;   
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }

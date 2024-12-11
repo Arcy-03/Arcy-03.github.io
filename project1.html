@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/portfolio.css">
   <link rel="stylesheet" href="css/socials-buttons.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slider.css">
   
 
 </head>
@@ -38,6 +39,7 @@
     
     <!-- Link to the JavaScript file which is in the folder js -->
     <script src="js/trial.js"></script>
+    <script src="js/slider.js"></script>
   </header>
 
 
@@ -51,16 +53,42 @@
 
             <section id="project-1">
               <div style="padding-left: 20px; padding-right: 20px">
-                  <h2 style=" font-size: 1.8em; color: rgb(255, 241, 241); text-align: center; margin-bottom: 20px; padding-bottom: 10px;"><b>UniMarketplace</b></h2>
-                  <p style=" color:rgb(212, 229, 255); font-size: 17px; text-align: justify; justify-items: center; ">
-                  During the 1st year of my undergraduate degree, in second semester, we were asked to create a Software project as part of our module - Team Software Project.
+                  <h2 style=" font-size: 1.8em; color: rgb(255, 241, 241); text-align: center; margin-bottom: 20px; padding-bottom: 10px;"><b>Uni Marketplace</b></h2>
+                  <p style=" font-size: 18px; color:rgb(212, 229, 255);  text-align: justify; justify-items: center; ">
+                  During the 1st year of my undergraduate degree, in the 2nd semester, we were asked to create a Software project as part of our Team Software Project module.
                   </p>
+                  <ul style="text-align: justify;">
+
+                    <li style="padding-bottom: 10px;">We created a responsive E-commerce webapp called Uni Marketplace. </li>
+                    <li style="padding-bottom: 10px;">Uni Marketplace was created to allow students to buy and sell second-hand items within the university</li> 
+                    <li style="padding-bottom: 10px;">It was created using Wordpress website builder and numerous plugins.</li>
+                    <li style="padding-bottom: 10px;">I acted as the project lead and was responsible for the overall development, delegating tasks and deployment.</li>
+                    
+                  </ul>
+
+                  
               </div>
             </section>
+
+            
             
             <div class="project-card">
-              <img src="project1.jpg" alt="Project 1" style="margin: auto">
-              <h3 class="project-title">UniMarketplace</h3>
+              
+              <div class="slider">
+                <div class="slides">
+                  <div class="slide"><img src="images/slide0.png" alt="Project 1 Slide 0"></div>
+                  <div class="slide"><img src="images/slide4.png" alt="Project 1 Slide 4"></div>
+                  <div class="slide"><img src="images/slide5.png" alt="Project 1 Slide 5"></div>
+                  <div class="slide"><img src="images/slide1.png" alt="Project 1 Slide 1"></div>
+                  <div class="slide"><img src="images/slide2.png" alt="Project 1 Slide 2"></div>
+                  <div class="slide"><img src="images/slide3.png" alt="Project 1 Slide 3"></div>
+                </div>
+
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+              </div>
+              
+              <h3 class="project-title">Uni Marketplace</h3>
               <p class="project-details" style="text-align: center;">A Responsive E-Commerce web app created as part of the Team software module</p>
               <button onclick="window.open('https://github.com/Arcy-03/Team-Software-Project-L4', '_blank')" style="margin-bottom: 10px;">View GitHub</button>
             </div>
@@ -71,20 +99,40 @@
   </main>
 
   <div id="social-test">
+
     <ul class="social" style="margin-left:10px; margin-right: 10px;">
-      <a href="https://github.com/Arcy-03"><i class="fa fa-github" aria-hidden="true"></a></i>
-      <a href="https://www.youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></a></i>
-      <a href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></a></i>
-      <a href="https://www.linkedin.com/in/hrithikchandra03/"><i class="fa fa-linkedin" aria-hidden="true"></a></i>
+
+      <a href="https://github.com/Arcy-03" aria-label="GitHub">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/hrithikchandra03/" aria-label="LinkedIn">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://instagram.com/" aria-label="Instagram">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" aria-label="YouTube">
+        <i class="fa fa-youtube" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://twitter.com/" aria-label="Twitter">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+
+
     </ul>
-  </div>    
+  </div>  
 
   <script>
     function openDetails(link) {
     window.open(link, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes');
     }
   </script>
+
+
 
 
 <footer>
